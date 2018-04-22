@@ -20,6 +20,11 @@ Route::get('/about','PagesController@about');
 Route::get('/services','PagesController@services');
 
 Route::resource('clients','ClientsController');
+Route::get('/getImport','ExcelController@getImport');
+Route::get('/postImport','ExcelController@postImport');
+Route::get('/getExport','ExcelController@getExport');
+Route::get('/deleteAll','ExcelController@deleteAll');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

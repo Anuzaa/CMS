@@ -73,7 +73,7 @@ class ClientsController extends Controller
         $client->nationality = $request->input('nationality');
         $client->birth_date = $request->input('birth_date');
         $client->education = $request->input('education');
-        $client->user_id = auth()->user()->id;
+        // $client->user_id = auth()->user()->id;
         $client->save();
         return redirect('/clients')->with('success','Client Information Added');
     }
@@ -138,7 +138,7 @@ class ClientsController extends Controller
         $client->nationality = $request->input('nationality');
         $client->birth_date = $request->input('birth_date');
         $client->education = $request->input('education');
-        $client->user_id = auth()->user()->id;
+        // $client->user_id = auth()->user()->id;
         $client->save();
 
         return redirect('/clients')->with('success','Client Information Updated');
