@@ -46,7 +46,7 @@ web: vendor/bin/heroku-php-apache2 public/
 
 APP_KEY, APP_URL are also added in settings in a Heroku Dashboard.
 
-## PROBLEMS 
+## Problems
 
 Since, i have MySQL database i couldnt perform database setup in Heroku as Heroku supports PostgreSQL.
 
