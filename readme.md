@@ -7,29 +7,31 @@ I have also added pagination and authentication services in this system.
 
 ## How to use
 
-i.Clone repo
+i. Clone repo
 git clone https://github.com/Anuzaa/CMS.git
 
-ii.Install the composer dependencies
+ii. Install the composer dependencies
     
    composer install
 
-iii.Save .env.example as .env and put your database credentials
+iii. Save .env.example as .env and put your database credentials
 
-iv.Set application key
+iv. Set application key
 
-v.php artisan key:generate        
+    php artisan key:generate        
 
-vi.And Migrate with
+v. And Migrate with
   
   php artisan migrate
 
 ## Usage Instructions
 To use this client management system application , one should follow the routing instructions or you can go simply through the interface and click the tabs.
+
 Here is the list of routing that i have added to my application.
-'/' 
+
+
 About: '/about'
-Service:'/services'
+Service: '/services'
 
 'clients'
 Import: '/getImport'
@@ -57,7 +59,7 @@ http://hidden-forest-77607.herokuapp.com/
 ## Future
 This is a simple CRUD application at the present where there are many changes needed to be made to run the bug free application. I could not deploy database  on heroku due to some 'missing flag' error. I want to fetch the data by making an api through ajax in the Laravel Framework in this application. I am planning to do in future to make this application more effective.
 
-#About Version
+## About Version
 In the laravel 5.6 and maatwebsite/excel 3.0, there are some changes which are updated as per the documentation on https://laravel-excel.maatwebsite.nl/docs/3.0/getting-started/upgrade.
 So, mattwebsite/excel 3.0 didn't support export the MySQL data into CSV file.
 
